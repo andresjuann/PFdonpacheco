@@ -1,221 +1,229 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background: #dda15e;
-    font-family: "Roboto Mono", monospace;
-    font-size: 20px;
+  margin: 0;
+  background: #dda15e;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
 }
 
 header h1 {
-    font-size: 6em;
-    padding: 50px;
-    margin: 0;
-    display: inline-block;
-    width: 100%;
+  font-size: 6em;
+  padding: 50px;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  /* Animación 1: Fade In Up */
+  animation: fadeInUp 1.5s ease-out;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+nav li {
+  display: inline-block;
+  margin: 0 15px;
 }
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  /* Animación 2: Cambio de Color en Hover */
+  position: relative;
+  transition: color 0.3s ease;
 }
-
-nav ul li a:hover {
-    text-decoration: underline;
+nav a:hover {
+  text-decoration: underline;
+  color: #f1c40f;
 }
 
 .card-img-top {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Animación 3: Zoom In */
+  animation: zoomIn 2s ease-out;
 }
 
 .card-body {
-    border-radius: 0.5rem;
-    padding: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /* Animación 4: Pulse */
+  animation: pulse 2s infinite;
 }
 
-h2{ 
-    background-color: #606c38;
+h2 {
+  background-color: #606c38;
+  /* Animación 5: Slide In Left */
+  animation: slideInLeft 1.5s ease-out;
 }
-
-.card-title {
-    margin: 1rem 0;
-}
-
-/* expediciones */
 
 .contenedor {
-    width: 800px;
-    margin: 0 auto;
-    padding: 20px; 
-    border-radius: 10px; 
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  /* Animación 6: Fade In */
+  animation: fadeIn 2s ease-in;
 }
 
 article {
-    transition: box-shadow 0.3s ease;
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 article h2 {
-    margin-top: 0;
-    color: black; 
-    background-color:#606c38;
-}
-
-article p, article a {
-    color: black; 
+  background-color: #606c38;
 }
 
 article img {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* sobre nosotros */
-.contenedor {
-    width: 800px;
-    margin: 0 auto;
-    
-}
-
-article {
-    transition: box-shadow 0.3s ease;
-    background-color: #606c38;
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    cursor: pointer;
-    color: black; 
-    
-
-}
-
-article h2 {
-    margin-top: 0;
-    color: white;
-    color: black; 
-    background-color:#606c38
-
-}
-
+/* sobre nosotros partials article y base */
 /* proyectos humanitarios */
-
 .img-fluid {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: block;
-    margin: 20px auto;
-}
-
-.contenedor {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 20px auto;
 }
 
 .proyecto {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .sombra {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 /* faq */
-
 .contenedor {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    
-    
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .pregunta {
-    margin-bottom: 2rem;
-    background-color:#606c38;
-
-
-    
+  margin-bottom: 2rem;
+  background-color: #606c38;
 }
 
-.pregunta p{    
-    background-color: white;
+.pregunta p {
+  background-color: black;
 }
-
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
-
 footer a {
-    color: green;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: green;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-
 footer a:hover {
-    color: black;
+  color: black;
 }
 
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-        padding: 1.5rem;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    .contenedor {
-        padding: 10px;
-    }
-
-    article {
-        padding: 0.5rem;
-        margin: 0.5rem 0;
-    }
+  header h1 {
+    font-size: 2.8rem;
+    padding: 1.8rem;
+    text-align: center;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  nav ul li {
+    margin: 0.6rem 0;
+  }
+  .contenedor {
+    padding: 12px;
+    width: 95%;
+  }
+  article {
+    padding: 0.7rem;
+    margin: 0.7rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
-
-
+/*# sourceMappingURL=style.css.map */
